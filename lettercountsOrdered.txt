@@ -1,0 +1,188 @@
+Read 12478 words
+
+Counts for position 1:
+-------
+S: 1521
+C: 888
+B: 871
+P: 821
+T: 787
+A: 715
+M: 666
+D: 650
+R: 610
+G: 608
+F: 575
+L: 551
+H: 477
+W: 402
+K: 353
+N: 317
+E: 288
+O: 257
+V: 231
+J: 191
+U: 178
+Y: 175
+I: 157
+Z: 98
+Q: 76
+X: 15
+
+Counts for position 2:
+-------
+A: 2158
+O: 2008
+E: 1572
+I: 1334
+U: 1137
+R: 908
+L: 677
+H: 525
+N: 334
+Y: 263
+T: 232
+P: 229
+M: 175
+C: 173
+W: 158
+K: 92
+S: 89
+D: 83
+B: 79
+G: 73
+X: 53
+V: 52
+Z: 28
+F: 23
+Q: 14
+J: 9
+
+Counts for position 3:
+-------
+A: 1206
+R: 1158
+I: 1018
+O: 960
+N: 933
+E: 847
+L: 820
+U: 642
+T: 599
+S: 510
+M: 497
+C: 373
+D: 373
+G: 351
+P: 343
+B: 315
+W: 265
+K: 253
+V: 226
+Y: 202
+F: 168
+Z: 136
+X: 124
+H: 107
+J: 42
+Q: 10
+
+Counts for position 4:
+-------
+E: 2257
+A: 1027
+T: 878
+I: 833
+N: 758
+L: 756
+R: 695
+O: 658
+S: 502
+K: 484
+D: 451
+G: 409
+P: 406
+M: 391
+C: 389
+U: 379
+B: 227
+F: 225
+H: 224
+V: 148
+W: 126
+Z: 119
+Y: 98
+J: 26
+X: 11
+Q: 1
+
+Counts for position 5:
+-------
+S: 3805
+E: 1477
+Y: 1254
+D: 807
+T: 710
+R: 656
+A: 632
+N: 512
+L: 465
+O: 365
+H: 349
+I: 253
+K: 244
+M: 179
+P: 146
+G: 135
+C: 124
+F: 80
+X: 65
+U: 63
+W: 62
+B: 55
+Z: 31
+V: 4
+Q: 3
+J: 2
+
+Overall::
+-------
+S: 5719
+E: 5514
+A: 5122
+R: 3788
+O: 3743
+I: 3437
+L: 3016
+T: 2950
+N: 2694
+U: 2327
+D: 2213
+Y: 1952
+C: 1841
+P: 1817
+M: 1806
+H: 1632
+G: 1478
+B: 1447
+K: 1372
+W: 1003
+F: 953
+V: 642
+Z: 371
+J: 268
+X: 267
+Q: 104
+Best so far:  AAHED 2447
+Best so far:  ABASE 1548
+Best so far:  ABBES 1381
+Best so far:  ABETS 1254
+Best so far:  ABIES 973
+Best so far:  ACNES 903
+Best so far:  ACRES 867
+Best so far:  AEONS 813
+Best so far:  AEROS 749
+Best so far:  PASEO 747
+Best so far:  SERAI 659
+Best:  { word: 'SERAI', peak: 659 }
+TIRES:  1101
