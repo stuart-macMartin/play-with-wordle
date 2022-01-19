@@ -1,4 +1,4 @@
-import { NumberByString } from "./types";
+import { NumberByString, ScoreCount, ScoreDistribution } from "./types";
 
 const fs = require('fs');
 
@@ -104,6 +104,12 @@ export function logLetterCounts(counts: NumberByString) {
     console.log(`${v.char}: ${v.count}`);
   }); 
 
+}
+
+export function logDistribution(dist: ScoreDistribution) {
+  Object.entries(dist).map(([k, v]: [string, ScoreCount]) => ({ score: k, count: v.count }))
+  .sort((d1, d2) => (d1.score < d2.score)? -1 : (d1.score > d2.score)? 1 : 0)
+  .forEach(d => console.log(d));
 }
 
 

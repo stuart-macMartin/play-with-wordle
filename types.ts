@@ -6,8 +6,14 @@ export interface Options {
   wantLetterCounts: boolean,
 
   wantMaxProbIn3: boolean, // Find word that gives best chance of winning in <= 3
+  wantMaxProbIn4: boolean, // Find word that gives best chance of winning in <= 4
+  wantLeastExpectedLength?: boolean,
+  wantBestDistribution?: boolean
+  useMinDepth?: boolean,
+  
 
-  getDistributionOn: string,
+
+  analyzeWord: string,
 }
 
 export interface NumberByString {
