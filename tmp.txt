@@ -1,108 +1,111 @@
 12972 allowed guess words
 2315 secrets
-==== getProbSolveBy  2315 3 [
-  { guess: 'cigar', metric: 0.0449244060475162 },
-  { guess: 'rebut', metric: 0.04967602591792657 },
-  { guess: 'sissy', metric: 0.019438444924406047 },
-  { guess: 'humph', metric: 0.023758099352051837 },
-  { guess: 'awake', metric: 0.028941684665226782 },
-  { guess: 'blush', metric: 0.03974082073434125 },
-  { guess: 'focal', metric: 0.045788336933045355 },
-  { guess: 'evade', metric: 0.032397408207343416 },
-  { guess: 'naval', metric: 0.03326133909287257 },
-  { guess: 'serve', metric: 0.042332613390928725 },
-  { guess: 'heath', metric: 0.03498920086393088 },
-  { guess: 'dwarf', metric: 0.035421166306695465 },
-  { guess: 'model', metric: 0.047516198704103674 },
-  { guess: 'karma', metric: 0.03023758099352052 },
-  { guess: 'stink', metric: 0.041900647948164144 },
-  { guess: 'grade', metric: 0.052699784017278616 },
-  { guess: 'quiet', metric: 0.033693304535637146 },
-  { guess: 'bench', metric: 0.037149028077753776 },
-  { guess: 'abate', metric: 0.03628509719222462 },
-  { guess: 'feign', metric: 0.044060475161987044 },
-  { guess: 'major', metric: 0.03498920086393088 },
-  { guess: 'death', metric: 0.04794816414686825 },
-  { guess: 'fresh', metric: 0.039308855291576676 },
-  { guess: 'crust', metric: 0.05140388768898488 },
-  { guess: 'stool', metric: 0.03801295896328294 },
-  { guess: 'colon', metric: 0.037149028077753776 },
-  { guess: 'abase', metric: 0.03282937365010799 },
-  { guess: 'marry', metric: 0.037149028077753776 },
-  { guess: 'react', metric: 0.06047516198704104 },
-  { guess: 'batty', metric: 0.03455723542116631 },
-  { guess: 'pride', metric: 0.05053995680345572 },
-  { guess: 'floss', metric: 0.029805615550755938 },
-  { guess: 'helix', metric: 0.030669546436285097 },
-  { guess: 'croak', metric: 0.045788336933045355 },
-  { guess: 'staff', metric: 0.025485961123110152 },
-  { guess: 'paper', metric: 0.03628509719222462 },
-  { guess: 'unfed', metric: 0.0367170626349892 },
-  { guess: 'whelp', metric: 0.035421166306695465 },
-  { guess: 'trawl', metric: 0.042764578833693306 },
-  { guess: 'outdo', metric: 0.030669546436285097 },
-  { guess: 'adobe', metric: 0.04103671706263499 },
-  { guess: 'crazy', metric: 0.031101511879049675 },
-  { guess: 'sower', metric: 0.04622030237580994 },
-  { guess: 'repay', metric: 0.04881209503239741 },
-  { guess: 'digit', metric: 0.031101511879049675 },
-  { guess: 'crate', metric: 0.06393088552915767 },
-  { guess: 'cluck', metric: 0.03023758099352052 },
-  { guess: 'spike', metric: 0.04449244060475162 },
-  { guess: 'mimic', metric: 0.021166306695464362 },
-  { guess: 'pound', metric: 0.039308855291576676 },
-  { guess: 'maxim', metric: 0.0224622030237581 },
-  { guess: 'linen', metric: 0.03758099352051836 },
-  { guess: 'unmet', metric: 0.04319654427645788 },
-  { guess: 'flesh', metric: 0.03974082073434125 },
-  { guess: 'booby', metric: 0.022894168466522678 },
-  { guess: 'forth', metric: 0.0449244060475162 },
-  { guess: 'first', metric: 0.04881209503239741 },
-  { guess: 'stand', metric: 0.04449244060475162 },
-  { guess: 'belly', metric: 0.035853131749460046 },
-  { guess: 'ivory', metric: 0.03153347732181425 },
-  { guess: 'seedy', metric: 0.03412526997840173 },
-  { guess: 'print', metric: 0.04881209503239741 },
-  { guess: 'yearn', metric: 0.04665226781857451 },
-  { guess: 'drain', metric: 0.05658747300215983 },
-  { guess: 'bribe', metric: 0.03326133909287257 },
-  { guess: 'stout', metric: 0.03758099352051836 },
-  { guess: 'panel', metric: 0.05399568034557235 },
-  { guess: 'crass', metric: 0.031965442764578834 },
-  { guess: 'flume', metric: 0.03974082073434125 },
-  { guess: 'offal', metric: 0.024190064794816415 },
-  { guess: 'agree', metric: 0.039308855291576676 },
-  { guess: 'error', metric: 0.024190064794816415 },
-  { guess: 'swirl', metric: 0.042332613390928725 },
-  { guess: 'argue', metric: 0.05140388768898488 },
-  { guess: 'bleed', metric: 0.04060475161987041 },
-  { guess: 'delta', metric: 0.04794816414686825 },
-  { guess: 'flick', metric: 0.035853131749460046 },
-  { guess: 'totem', metric: 0.038876889848812095 },
-  { guess: 'wooer', metric: 0.03455723542116631 },
-  { guess: 'front', metric: 0.04622030237580994 },
-  { guess: 'shrub', metric: 0.037149028077753776 },
-  { guess: 'parry', metric: 0.039308855291576676 },
-  { guess: 'biome', metric: 0.04146868250539957 },
-  { guess: 'lapel', metric: 0.04103671706263499 },
-  { guess: 'start', metric: 0.04017278617710583 },
-  { guess: 'greet', metric: 0.0449244060475162 },
-  { guess: 'goner', metric: 0.050971922246220304 },
-  { guess: 'golem', metric: 0.04362850971922246 },
-  { guess: 'lusty', metric: 0.03844492440604751 },
-  { guess: 'loopy', metric: 0.031101511879049675 },
-  { guess: 'round', metric: 0.04794816414686825 },
-  { guess: 'audit', metric: 0.047516198704103674 },
-  { guess: 'lying', metric: 0.03758099352051836 },
-  { guess: 'gamma', metric: 0.02591792656587473 },
-  { guess: 'labor', metric: 0.0531317494600432 },
-  { guess: 'islet', metric: 0.04708423326133909 },
-  { guess: 'civic', metric: 0.019870410367170625 },
-  { guess: 'forge', metric: 0.044060475161987044 },
-  { guess: 'corny', metric: 0.04838012958963283 },
-  { guess: 'moult', metric: 0.0449244060475162 },
-  ... 12872 more items
-]
-===== getProbSolveBy length  2315 depth 3 :  { guess: 'trace', metric: 0.06479481641468683 }
+Best 100 word distributions
+===========================
+lares: 3745512
+rales: 3789200
+tares: 3923922
+soare: 3941294
+reais: 3953360
+nares: 3963578
+aeros: 4017862
+rates: 4038902
+arles: 4082728
+serai: 4087910
+saner: 4121672
+tales: 4223616
+aloes: 4237954
+reals: 4269202
+lanes: 4283500
+lears: 4297300
+salet: 4328120
+laers: 4338718
+seral: 4354664
+teras: 4372062
+lores: 4408720
+earls: 4437724
+saine: 4439712
+raise: 4454648
+roles: 4476680
+reans: 4501778
+tears: 4533934
+aeons: 4541004
+sorel: 4544358
+nears: 4545372
+cares: 4552456
+aures: 4569058
+dares: 4573696
+nates: 4574884
+stoae: 4585060
+laser: 4592552
+strae: 4594218
+toeas: 4601126
+tores: 4645798
+mares: 4659618
+soler: 4681670
+sared: 4682076
+races: 4686894
+pares: 4696826
+taser: 4701758
+earns: 4703026
+orles: 4728434
+rones: 4740016
+hares: 4748554
+snare: 4779404
+riles: 4783960
+sayer: 4799498
+rotes: 4806954
+teals: 4815536
+stare: 4822604
+rapes: 4833964
+solei: 4835558
+leans: 4845042
+leats: 4864382
+aesir: 4865712
+gares: 4872646
+neals: 4887170
+taels: 4888730
+dales: 4899374
+laris: 4901214
+dates: 4953980
+arose: 4956000
+taros: 4962022
+bares: 4969242
+rails: 4974996
+tires: 4984594
+lades: 4990664
+roues: 4991104
+siler: 4996176
+kaies: 4997134
+rages: 4998320
+arets: 5010384
+lairs: 5013918
+slate: 5016676
+saice: 5038608
+toles: 5042764
+setal: 5056964
+dears: 5060018
+leirs: 5061034
+sated: 5064390
+slier: 5078632
+aides: 5084748
+arise: 5091102
+saute: 5096128
+ratos: 5097120
+laces: 5099492
+tries: 5108310
+ayres: 5111608
+salue: 5112454
+slane: 5112974
+antes: 5116824
+stear: 5119290
+yales: 5127484
+acres: 5127566
+toras: 5128186
 
-Best word to maximize getting in 3: trace probability 0.06479481641468683
+Some examples:
+slate: index 78 score 5016676
+soare: index 3 score 3941294
+roate: index 212 score 5591924
+tires: index 70 score 4984594
+adieu: index 2123 score 8701104

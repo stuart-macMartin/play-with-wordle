@@ -1,5 +1,5 @@
-import { Best, NumberByString, Options, ScoreCount, ScoreDistribution } from "../types";
-import { getLetterCountsByPosition, getWordCountsByLetter, getWordleScore, logDistribution, logLetterCounts, readAllWordleWords, readAltWords, readSecretWordleWords } from "../util";
+import { Best, NumberByString, Options, ScoreCount, ScoreDistribution } from "./types";
+import { getLetterCountsByPosition, getWordCountsByLetter, getWordleScore, logDistribution, logLetterCounts, readAllWordleWords, readAltWords, readSecretWordleWords } from "./util";
 
 export class Engine {
   allWords: string[];

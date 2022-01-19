@@ -2,7 +2,7 @@
 
 // Run in terminal with: ts-node main.ts
 
-import { Engine } from "./dictionaries/engine";
+import { Engine } from "./engine";
 import { Options } from "./types";
 
 
