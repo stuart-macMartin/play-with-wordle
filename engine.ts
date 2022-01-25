@@ -13,6 +13,7 @@ export class Engine {
   constructor(private options: Options) {
     this.allWords = options.useWordleAllWords? readAllWordleWords() : readAltWords();
     this.secretWords = options.useWordleSecretWords? readSecretWordleWords() : readAltWords();
+    console.log(`There are ${this.allWords.length} guess words and ${this.secretWords.length} possible secret words.`);
   }
 
 
@@ -141,14 +142,26 @@ export class Engine {
     }
     
     // No point looking at all words once we get close
-    const guessWords = (numAllowedGuesses > 3)? this.allWords : this.secretWords;
+    let guessWords = (numAllowedGuesses > 3)? this.allWords : this.secretWords;
+    if (numAllowedGuesses > 1) {
+      guessWords = this.selectWords(guessWords, words);
+      if (numAllowedGuesses === 3) {
+        console.log("Initial guesses limited to", guessWords);
+      }
+    }
   
     // To save work, we stop if we hit 1!
     let nextReport = recursing? 500 : 1;
     let best = <Best>{guess: '', metric: 0};
     guessWords.forEach((w, index) => {
+      if (!recursing) {
+        console.log("Processing top level word ", w);
+      }
       if (best.metric < 1.0) {
         const local = this.getProbSolveByForWord(words, numAllowedGuesses - 1, w);
+        if (!recursing) {
+          console.log("Word ", w, "score", local);
+        }
         if (local > best.metric) {
           best = { guess: w, metric: local}
           if (!recursing) {
@@ -162,7 +175,7 @@ export class Engine {
           const reportTime = new Date();
           const elapsed = Math.round((reportTime.getTime() - this.startTime.getTime()) / 1000);
           console.log(`${nextReport}% time: ${elapsed}sec`);
-          ++nextReport;
+          nextReport = Math.floor(percent);
         }
       }
     });
@@ -199,6 +212,12 @@ export class Engine {
         return 0;
       }
     }
+    if (additionalGuesses === 1) {
+      // Any cell with n values has prob of 1/n given this cell is picked,
+      // and prob this cell is picked is n/N,
+      // So overall prob is just the number of cells.
+      return values.length / words.length;
+    }
 
     const total = Object.values(dist).reduce((acc: number, v: ScoreCount) => {
       if (v.count > 0) {
@@ -233,5 +252,40 @@ export class Engine {
     console.log("Rejected type 2:", this.quickReject2Count);
     console.log("Word cache size: ", Object.keys(this.metricCache).length);
     console.log("Word cache usage: ", this.foundInCacheCount);
+  }
+
+
+  private selectWords(guessWords: string[], secretWords: string[]) {
+    if (secretWords.length <= 20) {
+      // This filtering takes time so only valuable with lots of secret words
+      return guessWords;
+    }
+    const a = guessWords.map(w => {
+      const d = this.getScoreCounts(secretWords, w);
+      const metric = Object.values(d).reduce((acc: number, v: ScoreCount) => acc + v.count * v.count, 0);
+      return <Best>{ guess: w, metric };
+    });
+
+    const metricLimit = secretWords.length / 4 * secretWords.length;
+    let b = a.filter(item => item.metric < metricLimit);
+    // if (b.length < a.length) {
+    //   console.log("Reduced from ", a.length, "to", b.length);
+    // }
+    if (b.length === 0) {
+      return guessWords;
+    }
+
+    const countLimit = 200;
+    if (b.length >= countLimit) {
+      b.sort((a, b) => (a.metric < b.metric)? -1 : (a.metric > b.metric)? 1 : 0);
+      b = b.slice(0, countLimit);
+    }
+    const limit = b[0].metric * 1.5;
+    const c = b.filter(item => item.metric < limit);
+    // if (c.length < b.length) {
+    //   console.log("Reduced from ", b.length, "to", c.length);
+    // }
+
+    return c.map(item => item.guess);
   }
 }

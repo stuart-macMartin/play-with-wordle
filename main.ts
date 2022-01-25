@@ -21,12 +21,12 @@ const options: Options = {
   // Note some might take some time.
   wantLetterCounts: false,
 
-  wantMaxProbIn3: false,
+  wantMaxProbIn3: true,
   wantMaxProbIn4: false,
   wantBestDistribution: false,
 
   // debug or interest
-  analyzeWord: 'roate',
+  analyzeWord: '',
 }
 
 const wantLetterCounts = true;
